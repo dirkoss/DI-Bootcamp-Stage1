@@ -17,7 +17,7 @@ html {
     border: 1px solid red;
 } */
 
-.row {
+.row1 {
     width: 1250px;
     height: calc(var(--item-higth) + 20px);
 }
@@ -29,10 +29,12 @@ html {
     margin-left: 15px;
 }
 
-.photo {
+.model {
     position: relative;
     background-repeat: no-repeat;
+
     /* background-attachment: fixed; */
+    
     background-size: contain;
     width: var(--item-width);
     height: 375px;
@@ -47,13 +49,13 @@ html {
 .button {
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
+    margin: 12px 2px;
+    transition-duration: 0.6s;
     cursor: pointer;
 }
 
@@ -64,7 +66,7 @@ html {
 }
 
 .button1:hover {
-    background-color: gray;
+    background-color: darkgray;
     color: white;
 }
 
@@ -101,7 +103,7 @@ html {
     text-decoration-line: line-through;
 }
 
-.green-circle {
+.green {
     width: 50px;
     height: 50px;
     background-color: darkcyan;
@@ -115,7 +117,7 @@ html {
     align-content: center;
 }
 
-.red-circle {
+.red {
     width: 50px;
     height: 50px;
     background-color: red;
