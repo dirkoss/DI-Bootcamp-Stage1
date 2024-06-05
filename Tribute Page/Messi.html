@@ -1,11 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Messi Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <style>
+    /* some basic internal CSS for text-font and different color*/
+
+    .card {
+      height: 30%;
+      text-align: center;
+      vertical-align: middle;
+      margin-top: 10px;
+      margin-bottom: 40px;
+}
+          border-radius: 50%;
+
+
+    h2 {
+      font-family: Verdana, sans-serif;
+      color: red;
+    }
+
+    /* increase the size of images when hovering with mouse, didn't get it to work when only the button icon '+' was clicked unfortunately*/
+
+    img {
+      transition: transform .5s;
+    }
+
+    img:hover {
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+    }
+  </style>
+
 </head>
+
 <body>
-    
+
+  <!--Navigation bar-->
+
+  <nav class="nav-wrapper indigo">
+    <div class="container">
+
+      <!--Navigate to Home when clicked-->
+
+      <a href="#top" class="brand-logo center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg" alt="Flag_of_Argentina"
+          width="70xp" height="50px" padding-top="10px">
+      </a>
+      <a href="#" class="sidenav-trigger" data-target="smaller-screens">
+        <i class="material-icons">menu</i>
+      </a>
+
+      <!--Menu options are hidden on medium and smaller screens-->
+
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#Clubs">Clubs</a></li>
+        <li><a href="#Bio">Bio</a></li>
+        <li><a href="#Statistics">Statistics</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Specify the Elements in Sidenav for medium to smaller screens-->
+
+  <ul class="sidenav" id="smaller-screens">
+    <li><a href="#Clubs">Clubs</a></li>
+    <li><a href="#Bio">Bio</a></li>
+    <li><a href="#Statistics">Statistics</a></li>
+  </ul>
+
+
+  <!--The three clubs which columns adjust according to screensize-->
+
+  <div class="container">
+    <h2 id="Clubs">Clubs</h2>
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card" width="100px" ; height="200px" >
+          <div class="card-image">
+            <img
+              src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-1192763963.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp"
+              alt="Messi at FC Barcelona">
+
+            <a href="#" class="halfway-fab btn-floating indigo pulse">
+              <i class="material-icons">add</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <span class="card-title"><strong>FC Barcelona</strong></span>
+            <p>At the age of 16 years, Messi made his first-team debut as a substitute against Porto on 16 November
+              2003. At 17 years, he was at the time the <em>youngest</em> player to represent Barcelona in an official
+              competition.
+            </p>
+          </div>
+          <div class="card-action">
+            <ahref="https://www.youtube.com/watch?v=WkqecpHcIPw" target="_blank">Best Goal
+              </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col s12 m4">
+        <div class="card" width="100px" ; height="200px">
+          <div class="card-image">
+            <img
+              src="https://media.cnn.com/api/v1/images/stellar/prod/230104103714-01-lionel-messi-psg.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp"
+              alt="Messie at PSG FC">
+
+            <a href="#" class="halfway-fab btn-floating indigo pulse">
+              <i class="material-icons">add</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <span class="card-title"><strong>PSG FC</strong></span>
+            <p>In August 2021 Messi signed for French club Paris Saint-Germain at the age of 32.
+              The Argentinan player spend <u>two full seasons</u> in France for a total of 58 games
+              and winning the French Football Ligue both times that season.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="https://www.youtube.com/watch?v=-bScmWNL7-A" target="_blank">Best Goal
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col s12 m4">
+        <div class="card" width="100px" ; height="200px">
+          <div class="card-image">
+            <img
+              src="https://media.cnn.com/api/v1/images/stellar/prod/230816151359-lionel-messi-inter-miami.jpg?c=16x9&q=h_653,w_1160,c_fill/f_webp"
+              alt="Messi at Miami FC">
+            <a href="" class="halfway-fab btn-floating indigo pulse">
+              <i class="material-icons">add</i>
+            </a>
+          </div>
+          <div class="card-content">
+            <span class="card-title"><strong>Miami CF</strong></span>
+            <p>After PSG FC, Messi signed a 2 and a half year contract with Miami CF in the Major League Soccer in the
+              US. Messi's contract is reportedly worth <strong>over $150 million</strong>. He also received an equity
+              stake in the team.
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="https://www.youtube.com/watch?v=pORjd5ZkTrs" target="_blank">Best Goal
+            </a>
+          </div>
+        </div>
+      </div><br>
+
+
+      <div>
+        <h2 id="Bio">Biography</h2>
+
+        <!--Inline CSS to create an border around the biography-->
+
+          <h6 style="border-width:1.5px; border-style:solid; border-color:lightgray; padding:20px;">
+            <p><strong>Andrés "Leo" Messi</strong> was on born 24 June 1987 and is an Argentine professional footballer
+              who plays as a forward for and captains both Major League Soccer club Inter Miami and the Argentina national
+              team. </p>
+            <p>Widely regarded as one of the greatest players of all time, Messi has won a record eight Ballon d'Or
+              awards, a record six European Golden Shoes, and was named the world's best player for a record eight times
+              by FIFA. </p>
+            <p>Until 2021, he had spent his entire professional career with Barcelona, where he won a club-record 34
+              trophies, including ten La Liga titles, seven Copa del Rey titles, and the UEFA Champions League four times.
+            </p>
+            <p>With his country, he won the 2021 Copa América and the 2022 FIFA World Cup. A prolific goalscorer and
+              creative playmaker, Messi holds the records for <em>most goals (474), hat-tricks (36), and assists in La
+                Liga (192)</em>. has the <em>most international goals by a South American male (106). Messi has scored
+                over 800 senior career goals for club and country, and the most goals for a single club (672)</em>.
+          </h6>
+        </div>
+
+
+
+        <div>
+          <h2 id="Statistics">Statistics
+          </h2>
+
+          <div class="col s12 m6 xl3" height="180">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://media.nbcsportschicago.com/2023/05/getty-fifa-world-cup-trophy_13.jpg?quality=85&strip=all&resize=1200%2C675"
+                  alt="World Cup" width="120" height="180">
+                <h5>World Cup: 1 </h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 xl3" height="180">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://cdn.vox-cdn.com/thumbor/EahUGCoK3A1F7XIDT6qAYWhrMdw=/0x0:5000x3333/1820x1213/filters:focal(1986x214:2786x1014):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/72592580/1255673085.0.jpg"
+                  alt="Champions League Cup" width="120" height="180">
+                <h5>Champions League: 4</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 xl3" height="180">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://rtvhattem.nl/wp-content/uploads/2024/02/240217-voetbal.png" alt="La Liga Cup"
+                  width="120" height="180">
+                <h5>La Liga: 10</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 xl3">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="https://scontent.fein1-1.fna.fbcdn.net/v/t1.6435-9/64404836_2947329798616181_6303923710239703040_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=aqxr5pls24UQ7kNvgFEy82z&_nc_ht=scontent.fein1-1.fna&oh=00_AYDMbwhySIM0Ia1HGzSxfDTy1Holg-v1l427gHUOZRWb3Q&oe=666BB3AF"
+                  alt="Copa America Cup" width="120" height="180">
+                <h5>Copa America: 1</h5>
+              </div>
+            </div>
+          </div><br>
+
+          <div>
+            <div class="card-action" text-align="left">
+              <a href="https://en.wikipedia.org/wiki/Lionel_Messi" target="_blank">Messi's Wikipedia
+              </a>
+            </div>
+            <br><br>
+
+
+          </div><br>
+
+          <footer style="font-size: x-small;">
+            Made by Dirk 2024
+          </footer>
+
+
+          <!--An additional jquery script for the sidenav (via materializecss.com)-->
+
+          <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+          </script>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js">
+          </script>
+
+          <script>
+            $(document).ready(function () {
+              $('.sidenav').sidenav();
+            });
+
+        </script>
+
 </body>
+
 </html>
