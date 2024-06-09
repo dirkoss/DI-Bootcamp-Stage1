@@ -9,5 +9,5 @@ else:
 
     print(User_Word[0] + User_Word[9])
 
-for letter in range(1, len(User_Word) + 1):
+for letter in range(1, len(User_Word)+1):
         print(User_Word[0:letter])
