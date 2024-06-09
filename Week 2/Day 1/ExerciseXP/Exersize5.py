@@ -5,8 +5,6 @@ info = "Hi, my name is " + name  + " and I am " + str(age) + " years old. My sho
 
 #Three possible ways to print the same string
 
-
-
 print(info)
 print("Hi, my name is %s and I am %d years old. My shoe size is %d" % (name, age, shoe_size))
 print(f"Hi, my name is {name} and I am {age} years old. My shoe size is {shoe_size}")
