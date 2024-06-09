@@ -9,4 +9,4 @@ name = input("Write your name >>>")
 if name == "Dirk":
     print("Hello Weirdo")
 else:
-    print("Hello Stranger") i
+    print("Hello Stranger") 
