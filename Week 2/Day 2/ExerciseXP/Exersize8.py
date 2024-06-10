@@ -1,8 +1,9 @@
-Pizza_toppings = input("Enter the toppings you want on your pizza: ")
-for i in Pizza_toppings:
-    print("we will add the following toppings to your pizza")
-Pizza_toppings = Pizza_toppings.split()
-print(Pizza_toppings)
-if input == "quit":
-    print("We will add the following toppings to your pizza: ")
-    print(Pizza_toppings)   
+Pizza_toppings_lst = []
+while True:
+    topping = input("Enter topping: (or quit to checkout) ")
+    if topping == "quit" or topping == "Quit" or topping == "QUIT":
+        break
+    Pizza_toppings_lst.append(topping)
+    print(f"You add {topping}")
+print(Pizza_toppings_lst)
+print(f"Total price - {10 + 1 * len(Pizza_toppings_lst)}")
