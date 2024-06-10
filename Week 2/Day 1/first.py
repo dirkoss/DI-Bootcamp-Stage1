@@ -27,3 +27,19 @@ while True:
     counter += 1
     if counter == 5:
         break
+
+temperature = 10
+if temperature > 15:
+    print("It is warm")
+    print("drink water")
+print("done")
+
+
+my_car =    {
+  "brand": "Suzuki",
+  "model": "Mehran",
+  "year": 2001
+}
+
+# indexing the dict
+print("The model of my car is ", my_car["model"]) 
