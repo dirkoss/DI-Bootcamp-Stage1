@@ -1,1 +1,1 @@
-print((99**3)*8)
+# No, by design a tuple is a collection which is ordered but not changeable.

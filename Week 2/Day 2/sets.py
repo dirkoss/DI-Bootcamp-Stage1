@@ -5,3 +5,23 @@
     # 3. You don't need to access the elements by index.
     # 4. You don't need to access the elements by key.
     # 5. You don't need to access the elements by value.
+
+lista = {1, 2, 3, 4, 5}
+listb = {4, 5, 6, 7, 8}
+listc = {1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4}
+
+print(listc)    
+print(lista.difference(listb))
+print(listb.difference(lista))  
+
+print(listb.intersection(lista))  
+print(lista.union(listb))
+
+#lookup = check if a value is in a set
+
+print(1 in lista)   
+
+a_tuple = (10, 20, 30, 40)
+a, b, c, d = a_tuple
+
+print(b)
