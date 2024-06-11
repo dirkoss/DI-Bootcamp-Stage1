@@ -6,19 +6,26 @@
 
 # a_dictionary = {"Sun":"a star", "Earth":"a planet", "Moon":"a satellite"}
 
-# personal_information = {
-#     "name": "Dirk",
-#     "age": 30,
-#     "city": "Tel Aviv"
+personal_information = {
+    "name": "Dirk",
+    "age": 30,
+    "city": "Tel Aviv"
+    }
+
+# x = personal_information["name"]
+# print(x)
+
+# print(personal_information["city"])
+
 # }
 # print(personal_information["name", "age", "city"])
 
-dict = {
-"country" : "India",
-"continent" : "Asia",
-"Other_name" : "Bharat"
-}
-x = dict["Other_name"]
-print(x)
+# dict = {
+# "country" : "India",
+# "continent" : "Asia",
+# "Other_name" : "Bharat"
+# }
+# x = dict["Other_name"]
+# print(x)
 
 
