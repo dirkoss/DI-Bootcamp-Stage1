@@ -1,0 +1,15 @@
+Word0 = input("please input a word with extra vowels and consonants ")
+index = 0
+
+Word1 = (list(Word0))
+Word2 = []
+
+for letter in Word1:
+    if letter != Word1[index - 1]:
+        Word2.append(letter)
+    elif index == 0:
+        Word2.append(letter)
+    index += 1
+
+Word3 = "".join(Word2)
+print(Word3)
