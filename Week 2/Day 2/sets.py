@@ -21,7 +21,7 @@ print(lista.union(listb))
 
 print(1 in lista)   
 
-a_tuple = (10, 20, 30, 40)
+a_tuple = (0, 20, 30, 40)
 a, b, c, d = a_tuple
 
 print(b)
