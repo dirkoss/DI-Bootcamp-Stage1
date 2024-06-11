@@ -1,0 +1,7 @@
+Birtday = input("Enter your birthday as follows DD/MM/YYYY: ")
+Birtday_Split = Birtday.split("/")
+Day = int(Birtday_Split[0])
+Month = int(Birtday_Split[1])
+Year = int(Birtday_Split[2])
+print("Day: ", Day)
+print("Month: ", Month)
