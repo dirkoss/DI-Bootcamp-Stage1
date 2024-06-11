@@ -10,6 +10,9 @@ lista = {1, 2, 3, 4, 5}
 listb = {4, 5, 6, 7, 8}
 listc = {1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4}
 
+listd = listb.pop()
+print(listd)
+
 print(listc)    
 print(lista.difference(listb))
 print(listb.difference(lista))  
