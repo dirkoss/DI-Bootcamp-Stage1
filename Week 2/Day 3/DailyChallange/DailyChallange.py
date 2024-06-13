@@ -7,32 +7,20 @@
 #     Make sure the letters are strings.
 #     Make sure the indexes are stored in a list and those lists are values.
 
-word = dodo 
+word = "dodo"
 
 dictonary = {}
 # Length = 0
 
-for letter in enumerate(word):
+for index, letter in enumerate(word):
     if letter in dictonary:
         dictonary[letter] += [index]
     else:
         dictonary[letter] = [index]
     index += 1
 
+print(dictonary)
 
-
-
-
-# userInput = input("Enter a word: ")
-# Word = {}
-# Word2 = 0
-# for char in userInput:
-#     if char in Word:
-#         Word[char] += [Word2]
-#     else:
-#         Word[char] = [Word2]
-#     Word2 += 1
-# print(Word)
 
 
 # CHALLANGE 2
