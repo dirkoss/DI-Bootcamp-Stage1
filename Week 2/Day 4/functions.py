@@ -14,6 +14,7 @@
 
 # say_hello("Dirk")
 
+# the second argument is optional but defaults to "English"
 def say_hello(username, language = "English"):
     if language == "English":
         print(f"Hello, {username}!")
@@ -22,5 +23,5 @@ def say_hello(username, language = "English"):
     else:
         print(f"Sorry there is no {language}!")
 
-say_hello("Dirk", "Hebrew")
-say_hello("Dirk", "Italiano")  # Positional Arguments
+say_hello(username = "Dirk", language = "Hebrew") # Keyword Arguments
+say_hello( "Dirk", "Italiano")  # Positional Arguments
