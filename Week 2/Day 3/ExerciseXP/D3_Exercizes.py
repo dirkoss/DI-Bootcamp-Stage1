@@ -129,3 +129,31 @@ print(Store["number_stores"])
 # The characters, which names start with the letter “m” or “p”.
 
 users = ["Mickey","Minnie","Donald","Ariel","Pluto"]
+disney_users_A = {}
+disney_users_B = {}
+disney_users_C = {}
+disney_users_D = {}
+disney_users_E = {}
+
+for item in users:
+    disney_users_A[item] = users.index(item)
+print(disney_users_A)
+for item in users:
+    disney_users_B[users.index(item)] = item
+print(disney_users_B)
+newList = sorted(users)
+for item in newList:
+    disney_users_C[item] = newList.index(item)
+print(disney_users_C)
+
+
+for item in users:
+    if "i" in item:
+     disney_users_D[item] = users.index(item)
+print(disney_users_D)
+
+
+for item in users:
+    if item.startswith("M") or item.startswith("P"):
+     disney_users_E[item] = users.index(item)
+print(disney_users_E)
