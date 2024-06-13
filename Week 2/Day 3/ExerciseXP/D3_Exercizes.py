@@ -8,7 +8,12 @@
 # {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
 
 
+Keys = ['Ten', 'Twenty', 'Thirty']
+Values = [10, 20, 30]
 
+dictionary = zip(Keys, Values)
+dictionary = dict(dictionary)
+print(dictionary)
 
 
 # EXERCISE 2
@@ -26,6 +31,17 @@
 # How much does each family member have to pay ?
 
 # 4. Print out the family’s total cost for the movies.
+
+People = {"rick": 43, 'beth': 13, 'morty': 5, 'summer': 8}
+Costs = 0
+for value in People.values():
+    
+    if value > 12:
+        Costs += 15
+    elif value < 13 and value > 3:
+        Costs += 10
+
+print(Costs)
 
 
 # EXERCISE 3
@@ -53,6 +69,33 @@
 # 10. Print the amount of key value pairs (ie. length of the dictionary).
 # 11. Print the keys of the dictionary.
 # 12. Create another dictionary called more_on_zara with the following details:
+
+
+Store = {
+    "name": "Zara",
+    "creation_date": 1975,
+    "creator_name": "Amancio Ortega Gaona",
+    "type_of_clothes": ["men", "women", "children", "home"],
+    "international_competitors": ["Gap", "H&M", "Benetton"],
+    "number_stores": 7000,
+    "major_color": {
+        "France": ["blue"],
+        "Spain": ["red"], 
+        "US": ["pink", "green"]
+        },
+}
+
+
+Store["number_stores"] = 2
+print("clients of Zara are")
+Store["country_creation"] = "spain"
+if "international_competitors" in Store:
+    Store["international_competitors"].append("Desigual")
+del Store["creation_date"]
+print(len(Store))
+Zara = dict(creation_date = 1975, number_stores = 10000)
+Store.update(Zara)
+print(Store["number_stores"])
 
 
 # EXERCISE 4
