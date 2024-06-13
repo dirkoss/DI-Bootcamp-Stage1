@@ -2,11 +2,13 @@
 # Write a function called display_message() that prints one sentence telling everyone what you are learning in this course.
 # Call the function, and make sure the message displays correctly.
 
+
 # EXERCISE 2
 # 1. Write a function called favorite_book() that accepts one parameter called title.
 # 2. The function should print a message, such as "One of my favorite books is <title>".
 # For example: “One of my favorite books is Alice in Wonderland”
 # 3. Call the function, make sure to include a book title as an argument when calling the function
+
 
 # EXERCISE 3
 # 1. Write a function called describe_city() that accepts the name of a city and its country as parameters.
