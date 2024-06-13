@@ -7,6 +7,17 @@
 #     Make sure the letters are strings.
 #     Make sure the indexes are stored in a list and those lists are values.
 
+userInput = input("Enter a word: ")
+Word = {}
+Word2 = 0
+for char in userInput:
+    if char in Word:
+        Word[char] += [Word2]
+    else:
+        Word[char] = [Word2]
+    Word2 += 1
+print(Word)
+
 
 # CHALLANGE 2
 
