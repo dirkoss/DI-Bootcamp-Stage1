@@ -28,5 +28,6 @@ print(moves)
 move = 0
 if moves[move] != " ":
     print("NOT ALLOWED")
+    
 else:
     moves[move] = player
