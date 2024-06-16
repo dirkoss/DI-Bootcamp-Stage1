@@ -26,6 +26,7 @@ def oldest_cat():
         oldest = Cat3
     return oldest
 
+
 print(f"The oldest cat is {oldest_cat().name}, and is {oldest_cat().age} years old.")
 
 
@@ -39,6 +40,27 @@ print(f"The oldest cat is {oldest_cat().name}, and is {oldest_cat().age} years o
 # 7. Create an object called sarahs_dog. Her dog’s name is “Teacup” and his height is 20cm.
 # 8. Print the details of her dog (ie. name and height) and call the methods bark and jump.
 # 9. Create an if statement outside of the class to check which dog is bigger. Print the name of the bigger dog.
+
+class Dog :
+    def __init__(self, name, height):
+        self.name = name
+        self.height = height
+
+    def bark(self):
+        print(f"{self.name} goes woof!")
+
+    def jump(self):
+        print(f"{self.name} jumps {self.height*2} cm high!")
+
+    
+davids_dog = Dog("Rex", 50)
+print(f"{davids_dog.name} is {davids_dog.height} cm high")
+
+sarahs_dog = Dog("Teacup", 20)
+print(f"{sarahs_dog.name} is {sarahs_dog.height} cm high")
+
+if davids_dog.height > sarahs_dog.height:
+    print(f"{davids_dog.name} is bigger")
 
 
 # EXERCISE 3
