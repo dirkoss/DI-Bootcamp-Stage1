@@ -106,7 +106,35 @@ stairway.sing_me_a_song()
 # Tip: The zookeeper is the one who will use this class.
 # Example
 
+class zoo:
+    def __init__(self, zoo_name):
+        self.zoo_name = zoo_name
+        self.animals = []
 
+    def add_animal(self, new_animal):
+        if new_animal not in self.animals:
+            self.animals.append(new_animal)
+
+    def get_animals(self):
+        print(self.animals)
+
+    def sell_animal(self, animal_sold):
+        self.animals.remove(animal_sold)
+
+    def sort_animals(self):
+        self.animals.sort()
+
+    def get_groups(self):
+        self.sort_animals()
+        animals_dict = {}
+        for animal in self.animals:
+            if animal[0] not in animals_dict:
+                animals_dict[animal[0]] = [animal]
+            else:
+                animals_dict[animal[0]].append(animal)
+        print(animals_dict)
+
+ramat_gan_safari = zoo("Ramat Gan Safari")
 
 
 
