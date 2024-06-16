@@ -23,6 +23,11 @@ class GameCharacter:
         self.health -= enemy_attack * 0.1
         print(f"{self.name} is defending with a health of {self.health}")
 
-player1 = GameCharacter("Dirk", 100, 50)
+def main() -> None:
 
-print (f"Player name: {player1.name}, Health points: {player1.health}, Strength: {player1.strength}")
+    player1 = GameCharacter("Dirk", 100, 50)
+
+    print (f"Player name: {player1.name}, Health points: {player1.health}, Strength: {player1.strength}")
+
+    if __name__ == "__main__":
+        main()
