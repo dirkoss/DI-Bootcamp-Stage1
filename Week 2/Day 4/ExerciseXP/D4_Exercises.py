@@ -2,6 +2,9 @@
 # Write a function called display_message() that prints one sentence telling everyone what you are learning in this course.
 # Call the function, and make sure the message displays correctly.
 
+import random
+
+
 def display_message():
     print("Learning Python in this course.")
 
@@ -52,6 +55,16 @@ def numberGame(Number2 = random.randint(1, 100)):
 # 6. Make medium shirt with the default message
 # 7. Make a shirt of any size with a different message.
 
+def make_shirt(size = "Large", text = "I Love Python"):
+    return f"The size of the shirt is {size} and the text is {text}"
+
+print(make_shirt())
+print(make_shirt("M"))
+print(make_shirt(text = "I am Dirk", size = "M"))
+
+
+# def make_shirt(size, printed_message):
+#     print(f"The size of the shirt is {size}, and the printed message is {printed_message}")
 
 # EXERCISE 6
 # Using this list of magician’s names
@@ -62,6 +75,20 @@ def numberGame(Number2 = random.randint(1, 100)):
 # 2. Write a function called make_great() that modifies the original list of magicians by adding the phrase "the Great" to each magician’s name.
 # 3. Call the function make_great().
 # 4. Call the function show_magicians() to see that the list has actually been modified.
+
+magician_names = ["Harry Houdini", "David Blaine", "Criss Angel"]
+
+def show_magicians():
+    for name in magician_names:
+        print(name)
+
+def make_great():
+    for i in range(len(magician_names)):
+        magician_names[i] += " the Great"
+
+show_magicians()
+make_great()
+show_magicians()
 
 # EXERCISE 7
 
