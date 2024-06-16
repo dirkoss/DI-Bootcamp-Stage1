@@ -15,7 +15,8 @@ display_message()
 
 def favorite_book(book_title):
     print(f"One is my favorite books is {book_title}")
-    
+
+favorite_book("Red Notice by Bill Browder")
 
 # EXERCISE 3
 # 1. Write a function called describe_city() that accepts the name of a city and its country as parameters.
@@ -24,6 +25,10 @@ def favorite_book(book_title):
 # Give the country parameter a default value.
 # 4. Call your function.
 
+def describe_city(city, country ='Netherlands'):
+    print(f"{city} is in {country}.")
+
+describe_city('Amsterdam')
 
 # EXERCISE 4
 # 1. Create a function that accepts a number between 1 and 100 and generates another number randomly between 1 and 100. Use the random module.
