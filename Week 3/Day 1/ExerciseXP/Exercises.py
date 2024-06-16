@@ -10,7 +10,7 @@
 # Print the following string: “The oldest cat is <cat_name>, and is <cat_age> years old.”. Use the function previously created.
 
 class Cat:
-    def __init__(self, cat_name, cat_age):
+    def __init__(self, cat_name: str, cat_age: int):
         self.name = cat_name
         self.age = cat_age
 
@@ -42,7 +42,7 @@ print(f"The oldest cat is {oldest_cat().name}, and is {oldest_cat().age} years o
 # 9. Create an if statement outside of the class to check which dog is bigger. Print the name of the bigger dog.
 
 class Dog :
-    def __init__(self, name, height):
+    def __init__(self, name: str, height: int):
         self.name = name
         self.height = height
 
@@ -78,9 +78,8 @@ if davids_dog.height > sarahs_dog.height:
 # all that glitters is gold
 # and she’s buying a stairway to heaven
 
-
 class Song:
-    def __init__(self, lyrics):
+    def __init__(self, lyrics: str):
         self.lyrics = lyrics
 
     def sing_me_a_song(self):
@@ -101,13 +100,12 @@ stairway.sing_me_a_song()
 # 4. Create a method called sell_animal that takes one parameter animal_sold. This method removes the animal from the list and of course the animal needs to exist in the list.
 # 5. Create a method called sort_animals that sorts the animals alphabetically and groups them together based on their first letter.
 # 6.Create a method called get_groups that prints the animal/animals inside each group.
-
 # 7. Create an object called ramat_gan_safari and call all the methods.
 # Tip: The zookeeper is the one who will use this class.
 # Example
 
 class zoo:
-    def __init__(self, zoo_name):
+    def __init__(self, zoo_name: str):
         self.zoo_name = zoo_name
         self.animals = []
 
