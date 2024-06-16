@@ -92,6 +92,41 @@ show_magicians()
 
 # EXERCISE 7
 
+def get_random_temp():
+    min = -10
+    max = 40
+    generated = random.randint(min, max)
+    return generated
+
+print(get_random_temp())
+
+def main():
+    generated_temp = get_random_temp()
+    print(f"The temperature right now is {generated_temp} degrees Celcius")
+
+    if(generated_temp < 0):
+        print("Brrr, that's freezing today")
+    elif(generated_temp < 16):
+        print("Quite Chilly! Don't forget your coat")
+    elif(generated_temp < 24):
+        print("A bit cold out there!")
+    elif(generated_temp < 32):
+        print("pretty warm outside. A shirt is enough")
+    elif(generated_temp < 40):
+        print("It's really  HOT outside!")
+
+
+def get_random_temp(season):
+    seasons = {
+        'winter' : (-20,5),
+        'autumn' : (5,15),
+        'spring' : (15,24),
+        'summer' : (24,60)
+     }
+    min,max = seasons[season]
+    generated = random.randint(min, max)
+    return generated
+
 
 # EXERCISE 8
 
