@@ -13,13 +13,13 @@ class Farm:
         self.name = farm_name
         self.animals = {}
 
-    def add_animal(self, animal: str, amount = 1):
+    def add_animal(self, animal: str, amount: int = 1) -> None:
         if animal not in self.animals:
             self.animals.update({animal : amount})
         else:
             self.animals[animal] += amount
 
-    def get_info(self) -> str:
+    def get_info(self):
         print(f"{self.name}'s farm \n")
         for key, value in self.animals.items():
             print(f"{key}: {value}")
