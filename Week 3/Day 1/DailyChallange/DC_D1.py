@@ -7,44 +7,55 @@
 # 5. Test your code and make sure you get the same results as the example above.
 # 6. Bonus: nicely line the text in columns as seen in the example above. Use string formatting.
 
+
 class Farm:
-    def __init__(self, name):
-        self.name = name
-        self.animals = []
+    def __init__(self, farm_name) -> None:
+        self.name = farm_name
+        self.animals = {}
 
-    def add_animal(self, new_animal):
-        if new_animal not in self.animals:
-            self.animals.append(new_animal)
+    def add_animal(self, animal: str, amount = 1):
+        if animal not in self.animals:
+            self.animals.update({animal : amount})
+        else:
+            self.animals[animal] += amount
 
-    def get_animals(self):
-        print(self.animals)
-
-    def get_animal_types(self):
-        animal_types = []
-        for animal in self.animals:
-            if animal['type'] not in animal_types:
-                animal_types.append(animal['type'])
-        return sorted(animal_types)
-
-    def get_short_info(self):
-        animal_types = self.get_animal_types()
-        if len(animal_types) > 1:
-            animal_types[-1] = animal_types[-1] + 's'
-        return f"{self.name} has {', '.join(animal_types)}."
+    def get_info(self) -> str:
+        print(f"{self.name}'s farm \n")
+        for key, value in self.animals.items():
+            print(f"{key}: {value}")
+        return "\n     E-I-E-I-0!"
     
-farm = Farm("McDonald's farm")
+    def get_animal_types(self) -> list:
+        sorted_animals = []
+        for animal in self.animals.keys():
+            sorted_animals.append(animal)
+            sorted_animals.sort()
+        return sorted_animals
+
+def get_short_info(self, animal_list: list) -> None:
+        i = 0
+        for value in self.animals.values():
+                if value > 1:
+                    animal_list[i] += "s"
+                    i += 1
+        for animal in animal_list:
+            print(animal_list.index(animal))
+            print(len(animal_list) - 1)
+            if animal_list.index(animal) < len(animal_list) - 1:
+                animal_list[animal_list.index(animal)] += ","
+        animal_list.insert(-1, "and")
+        with_and = " ".join(animal_list)
+        print(f"{self.name}’s farm has {with_and}.")
+
+
+def main():
+    macdonald = Farm("McDonald")
+    macdonald.add_animal('cow',5)
+    macdonald.add_animal('sheep')
+    macdonald.add_animal('sheep')
+    macdonald.add_animal('goat', 12)
     print(macdonald.get_info())
-'
+    macdonald.get_short_info(macdonald.get_animal_types())
 
-
-
-
-
-
-
-
-
-# 7. Add a method called get_animal_types to the Farm class. This method should return a sorted list of all the animal types (names) in the farm. With the example above, the list should be: ['cow', 'goat', 'sheep'].
-
-# 8. Add another method to the Farm class called get_short_info. This method should return the following string: “McDonald’s farm has cows, goats and sheeps.”. The method should call the get_animal_types function to get a list of the animals.
-# Note : In English the plural form of the word “sheep” is sheep. But for the purpose of the exercise, let’s say that if there is more than 1 animal, an “s” should be added at the end of the word.
+if __name__ == "__main__":
+    main()
