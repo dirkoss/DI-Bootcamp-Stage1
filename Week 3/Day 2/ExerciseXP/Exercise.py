@@ -102,7 +102,7 @@ class Family():
 
     def born(self, **info):
         self.members.append(info)
-        print("Congrats with the New Child")
+        print("Congrats with the New")
     
     def is18(self, name):
         for member in self.members:
@@ -130,20 +130,6 @@ class Family():
 
 # Print a sentence like “*Here is our powerful family **”
 # Prints the family’s last name and all the members’ details (ie. use the super() function, to call the family_presentation method)
-
-class TheIncredibles(Family):
-    def Powers(self, name:str):
-        for member in self.members:
-            if name in member.values():
-                if member.get("age") >= 18:
-                    print(member.get("power"))
-                else:
-                    raise Exception("Sorry they are too young, they are not over 18 years old")
-                
-
-    def incredible_presentation(self):
-        print("Here is our Powerful Family")
-        super().family_presentation()
 
 
 # WIP
