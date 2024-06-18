@@ -22,15 +22,13 @@ class PetDog(Dog):
             print(tricks[trick])
 
 def main():
-    rio = Dog("Rio", 15, 130)
-    jeep = Dog("Jeep", 17, 140)
-    sully = Dog("Sully", 20, 100)
-    sabra = PetDog("Sabra", 12, 137)
+    Dirk = Dog("Hans", 20, 100)
+    Dirk2 = Dog("Kees", 21, 102)
+    Dirk3 = Dog("Peter", 22, 102)
 
-    sabra.train()
-    sabra.play(rio.name, jeep.name, sully.name)
-    sabra.doATrick()
-
+    print(Dirk.fight(Dirk2))
+    print(Dirk.fight(Dirk3))
+    print(Dirk2.fight(Dirk3))
 
 if __name__ == "__main__":
     main()
