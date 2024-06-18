@@ -95,6 +95,28 @@ See other python files for the rest of the exercise
 
 # Create an instance of the Family class, with the last name of your choice, and the below members. Then call all the methods you created in Point 2.
 
+class Family():
+    def __init__(self, lastName: str):
+        self.members = []
+        self.lastname = lastName
+
+    def born(self, **info):
+        self.members.append(info)
+        print("congratulatons on the new child")
+    
+    def is18(self, name):
+        for member in self.members:
+            if name in member.values():
+                if member.get("age") >= 18:
+                    return True
+                else:
+                    return False
+        
+    def familyPresentation(self) -> None:
+        print(self.lastname)
+        for member in self.members:
+            print(member)
+
 # EXERCISE 5 
 
 # Create a class called TheIncredibles. This class should inherit from the Family class:
