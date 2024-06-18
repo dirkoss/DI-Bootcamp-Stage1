@@ -21,7 +21,7 @@ class Cat():
         self.age = age
 
     def walk(self):
-        return f'{self.name} is just walking around'
+        return f'{self.name} Is Just Walking a Round'
 
 class Bengal(Cat):
     def sing(self, sounds):
@@ -54,16 +54,16 @@ class Dog:
 
 
     def bark(self) -> str:
-        return f"{self.name} is barking"
+        return f"{self.name} Is barking"
     
     def runSpeed(self) -> int|float:
         return self.weight/self.age*10
     
     def fight(self, otherDog):
         if self.runSpeed() * self.weight >= otherDog.runSpeed() * otherDog.weight:
-            return f"winner is {self.name}"
+            return f"The Winner  Is {self.name}"
         else:
-            return f"winner is {otherDog.name}"
+            return f"The Winner Is {otherDog.name}"
         
 
 # EXERCISE 3
@@ -102,7 +102,7 @@ class Family():
 
     def born(self, **info):
         self.members.append(info)
-        print("congratulatons on the new child")
+        print("Congrats with the New Child")
     
     def is18(self, name):
         for member in self.members:
@@ -131,4 +131,19 @@ class Family():
 # Print a sentence like “*Here is our powerful family **”
 # Prints the family’s last name and all the members’ details (ie. use the super() function, to call the family_presentation method)
 
+class TheIncredibles(Family):
+    def Powers(self, name:str):
+        for member in self.members:
+            if name in member.values():
+                if member.get("age") >= 18:
+                    print(member.get("power"))
+                else:
+                    raise Exception("Sorry they are too young, they are not over 18 years old")
+                
 
+    def incredible_presentation(self):
+        print("Here is our Powerful Family")
+        super().family_presentation()
+
+
+# WIP
