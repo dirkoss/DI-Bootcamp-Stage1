@@ -160,19 +160,23 @@ data = [
         "answer": "Wookiee"
     }
 ]
-def starWarsQuiz():
-    print("Star Wars Quiz")
+
+CorrectAnswers = []
+WrongAnswers = []
+
+def Quiz():
+    print("Please answer the following Star Wars questions and press enter")
     for topic in data:
-        userAnswer = input(topic["question"])
-        if userAnswer == topic["answer"]:
+        Answer = input(topic["question"])
+        if Answer == topic["answer"]:
             print("Correct")
-            CorrectAnswers.append(userAnswer)
+            CorrectAnswers.append(Answer)
         else:
             print("sorry that's wrong")
-            WrongAnswers.append(userAnswer)
+            WrongAnswers.append(Answer)
         
-    print(f"you got {len(CorrectAnswers)} questions right and {len(WrongAnswers)} questions wrong")
+    print(f" Score: {len(CorrectAnswers)} answers were correct and {len(WrongAnswers)} answers wrong")
 
-starWarsQuiz()
+Quiz()
 
 
