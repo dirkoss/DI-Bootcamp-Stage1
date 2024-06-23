@@ -134,4 +134,6 @@ def get_random_temp(season):
 # 1. Create a function that asks the questions to the user, and check his answers. Track the number of correct, incorrect answers. Create a list of wrong_answers
 # 2. Create a function that informs the user of his number of correct/incorrect answers.
 # 3. Bonus : display to the user the questions he answered wrong, his answer, and the correct answer.
-# If he had more then 3 wrong answers, ask him to play again.
+
+
+
