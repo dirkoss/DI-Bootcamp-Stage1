@@ -133,7 +133,46 @@ def get_random_temp(season):
 
 # 1. Create a function that asks the questions to the user, and check his answers. Track the number of correct, incorrect answers. Create a list of wrong_answers
 # 2. Create a function that informs the user of his number of correct/incorrect answers.
-# 3. Bonus : display to the user the questions he answered wrong, his answer, and the correct answer.
 
+data = [
+    {
+        "question": "What is Baby Yoda's real name?",
+        "answer": "Grogu"
+    },
+    {
+        "question": "Where did Obi-Wan take Luke after his birth?",
+        "answer": "Tatooine"
+    },
+    {
+        "question": "What year did the first Star Wars movie come out?",
+        "answer": "1977"
+    },
+    {
+        "question": "Who built C-3PO?",
+        "answer": "Anakin Skywalker"
+    },
+    {
+        "question": "Anakin Skywalker grew up to be who?",
+        "answer": "Darth Vader"
+    },
+    {
+        "question": "What species is Chewbacca?",
+        "answer": "Wookiee"
+    }
+]
+def starWarsQuiz():
+    print("Star Wars Quiz")
+    for topic in data:
+        userAnswer = input(topic["question"])
+        if userAnswer == topic["answer"]:
+            print("Correct")
+            CorrectAnswers.append(userAnswer)
+        else:
+            print("sorry that's wrong")
+            WrongAnswers.append(userAnswer)
+        
+    print(f"you got {len(CorrectAnswers)} questions right and {len(WrongAnswers)} questions wrong")
+
+starWarsQuiz()
 
 
