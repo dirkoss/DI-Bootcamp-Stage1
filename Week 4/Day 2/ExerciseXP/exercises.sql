@@ -31,3 +31,34 @@ SELECT (first_name,  last_name) AS full_name FROM customer
 
 -- 3.
 
+SELECT DISTINCT create_date from customer
+
+-- 4.
+
+SELECT * from customer
+ORDER BY last_name DESC
+
+-- 5.
+
+SELECT film_id, title, description, release_year, rental_rate FROM public.film
+ORDER BY rental_rate ASC 
+
+-- 6.
+
+SELECT address, phone FROM public.address
+WHERE district = 'Texas'
+
+-- 7.
+
+SELECT * FROM public.film
+WHERE film_id IN ('15','150')
+
+-- 8.
+
+SELECT * FROM public.film
+WHERE title IN ('The Departed')
+
+-- 9.
+
+SELECT * FROM public.film
+WHERE title IN ('The Departed')
