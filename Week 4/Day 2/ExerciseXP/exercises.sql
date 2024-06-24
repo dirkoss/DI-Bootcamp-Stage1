@@ -56,9 +56,27 @@ WHERE film_id IN ('15','150')
 -- 8.
 
 SELECT * FROM public.film
-WHERE title IN ('The Departed')
+WHERE title = 'The Departed'
 
 -- 9.
 
 SELECT * FROM public.film
-WHERE title IN ('The Departed')
+WHERE title ILIKE 'Th%'
+
+-- 10.
+
+SELECT * FROM public.film
+WHERE replacement_cost = (SELECT MIN(replacement_cost) FROM film)
+LIMIT 10
+
+-- 11.
+
+SELECT * FROM public.film
+WHERE replacement_cost = (SELECT MIN(replacement_cost) FROM film)
+LIMIT 10
+OFFSET 10
+
+-- 12.
+
+
+
