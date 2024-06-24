@@ -29,6 +29,10 @@ SELECT * FROM public.customer
 
 SELECT (first_name,  last_name) AS full_name FROM customer
 
+-- OR
+
+SELECT first_name || ' ' || last_name AS full_name FROM customer
+
 -- 3.
 
 SELECT DISTINCT create_date from customer
@@ -77,6 +81,29 @@ LIMIT 10
 OFFSET 10
 
 -- 12.
+
+SELECT customer.first_name, customer.last_name, payment.amount, payment.payment_date
+FROM customer
+INNER JOIN payment
+ON customer.customer_id = payment.customer_id;
+
+-- 13.
+
+SELECT * FROM film
+WHERE (SELECT film.film_id, inventory.film_id
+FROM film
+INNER JOIN inventory
+ON film.film_id = inventory.film_id) = NULL
+
+-- 14.
+
+SELECT city.city, country.country
+FROM city
+INNER JOIN country
+ON city.country_id = country.country_id;
+
+-- 15.
+
 
 
 
