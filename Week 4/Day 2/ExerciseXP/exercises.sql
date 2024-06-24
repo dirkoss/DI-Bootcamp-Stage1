@@ -13,3 +13,8 @@ ORDER BY price
 SELECT first_name, last_name FROM customer
 ORDER BY last_name
 LIMIT 3 
+
+-- 4.
+
+SELECT last_name FROM customer
+ORDER BY last_name DESC
