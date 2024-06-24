@@ -18,3 +18,16 @@ LIMIT 3
 
 SELECT last_name FROM customer
 ORDER BY last_name DESC
+
+-- EXERCISE 2
+
+-- 1.
+
+SELECT * FROM public.customer
+
+-- 2.
+
+SELECT (first_name,  last_name) AS full_name FROM customer
+
+-- 3.
+
