@@ -63,3 +63,14 @@ The Query should be DROP TABLE customer_reviews, however the TABLE customer_revi
 to other TABLES
 
 -- EXERCISE 4. 
+
+SELECT COUNT (rental_id) FROM rental
+
+-- EXERCISE 5. 
+
+SELECT TOP(30) rental_id from rental WHERE (SELECT MAX(replacement_cost) FROM film)
+
+-- EXERCISE 6. 
+
+1. 
+SELECT title FROM film WHERE description ILIke (%sumo%) and film_id = (SELECT film_id FROM film_actor WHERE actor_id) = (SELECT actor_id FROM actor WHERE last_name = 'Monroe')
