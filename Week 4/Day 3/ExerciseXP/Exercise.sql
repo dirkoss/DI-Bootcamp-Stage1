@@ -1,3 +1,5 @@
+1.
+
 -- EXERCISE 1. 
 
 SELECT name from language
@@ -34,3 +36,30 @@ last_update date
 
 -- EXERCISE 6.
 
+INSERT INTO customer_reviews(film_id, language_id, title, score, review_text, last_update)
+VALUES ((SELECT id from new_film WHERE name ILIKE 'The Departed'), (SELECT language_id FROM language WHERE name ILIKE 'english'), 'Excellent movie', 9, 'Great suspense, awesome acting, overall great', '2024-06-25')
+VALUES ((SELECT id from new_film WHERE name ILIKE 'Star Wars'), (SELECT language_id FROM language WHERE name ILIKE 'english'), 'Not for me', 5, 'Fantasy and over the top', '2024-06-25') 
+
+-- EXERCISE 7
+
+DELETE from new_film where id = 2;
+The movie(review) Star Wars was deleted
+
+2.
+
+-- EXERCISE 1. 
+
+UPDATE film set language_id = 2  where title = 'Academy Dinosaur';
+UPDATE film set language_id = 2  where title = 'Ace Goldfinger';
+
+-- EXERCISE 2.
+
+customer_address_id_fkey
+Insertions must be equal to some value in the corresponding parent key of the parent table
+
+-- EXERCISE 3. 
+
+The Query should be DROP TABLE customer_reviews, however the TABLE customer_reviews contains foreign keys, referencing
+to other TABLES
+
+-- EXERCISE 4. 
