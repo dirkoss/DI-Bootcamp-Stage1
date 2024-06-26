@@ -28,7 +28,7 @@ review_id SERIAL PRIMARY KEY NOT NULL,
 film_id INT references new_film(id) ON DELETE CASCADE,
 language_id INT references language(language_id),
 title VARCHAR(50),
-score INT CHECK (score >= 0),
+score INT CHECK (score >= 0 or score <= 10),
 review_text text,
 last_update date
 );
@@ -43,7 +43,7 @@ VALUES ((SELECT id from new_film WHERE name ILIKE 'Star Wars'), (SELECT language
 -- EXERCISE 7
 
 DELETE from new_film where id = 2;
-The movie(review) Star Wars was deleted
+The movie(review) Star Wars was deleted from both tables
 
 2.
 
