@@ -81,26 +81,26 @@ WHERE actor.first_name = 'Penelope' and actor.last_name = 'Monroe' and film.desc
 
 SELECT film.title, film.description
 FROM film
-JOIN film_category on film.film_id = film_category.film_id
-JOIN category on film_category.category_id = category.category_id
+JOIN film_category ON film.film_id = film_category.film_id
+JOIN category ON film_category.category_id = category.category_id
 WHERE film.length < 60 and film.rating = 'R' and category.name = 'Documentary'
 
 SELECT film.title, film.description, rental.rental_date, rental.return_date
 FROM film
-inner JOIN inventory on film.film_id = inventory.film_id
-inner JOIN rental on rental.inventory_id = inventory.inventory_id
-inner JOIN customer on customer.customer_id = rental.customer_id
+inner JOIN inventory ON film.film_id = inventory.film_id
+inner JOIN rental ON rental.inventory_id = inventory.inventory_id
+inner JOIN customer ON customer.customer_id = rental.customer_id
 WHERE customer.first_name = 'Matthew' 
-and customer.last_name = 'Mahan'
+AND customer.last_name = 'Mahan'
 AND rental.return_date > '2005-07-28'  
 AND rental.return_date < '2005-08-01'
 AND film.rental_rate > 4.00
 
 SELECT film.title, film.description,
 FROM film
-JOIN inventory on film.film_id = inventory.film_id
-JOIN rental on rental.inventory_id = inventory.inventory_id
-JOIN customer on customer.customer_id = rental.customer_id
+JOIN inventory ON film.film_id = inventory.film_id
+JOIN rental ON rental.inventory_id = inventory.inventory_id
+JOIN customer ON customer.customer_id = rental.customer_id
 WHERE film.title ilike '%boat%' or film.description ilike '%boat%'
 AND customer.first_name = 'Matthew' 
 and customer.last_name = 'Mahan'
