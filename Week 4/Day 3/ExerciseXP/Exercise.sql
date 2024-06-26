@@ -2,7 +2,7 @@
 
 -- EXERCISE 1. 
 
-SELECT name from language
+SELECT name FROM language
 
 -- EXERCISE 2.
 
@@ -13,7 +13,7 @@ ON film.language_id = language.language_id;
 
 -- EXERCISE 3.
 
-SELECT * from language
+SELECT * FROM language
 
 -- EXERCISE 4.
 
@@ -73,4 +73,35 @@ SELECT TOP(30) rental_id from rental WHERE (SELECT MAX(replacement_cost) FROM fi
 -- EXERCISE 6. 
 
 1. 
-SELECT title FROM film WHERE description ILIke (%sumo%) and film_id = (SELECT film_id FROM film_actor WHERE actor_id) = (SELECT actor_id FROM actor WHERE last_name = 'Monroe')
+SELECT film.title, film.description
+FROM film
+JOIN film_actor on film.film_id = film_actor.film_id
+JOIN actor on actor.actor_id = film_actor.actor_id
+WHERE actor.first_name = 'Penelope' and actor.last_name = 'Monroe' and film.description
+
+SELECT film.title, film.description
+FROM film
+JOIN film_category on film.film_id = film_category.film_id
+JOIN category on film_category.category_id = category.category_id
+WHERE film.length < 60 and film.rating = 'R' and category.name = 'Documentary'
+
+SELECT film.title, film.description, rental.rental_date, rental.return_date
+FROM film
+inner JOIN inventory on film.film_id = inventory.film_id
+inner JOIN rental on rental.inventory_id = inventory.inventory_id
+inner JOIN customer on customer.customer_id = rental.customer_id
+WHERE customer.first_name = 'Matthew' 
+and customer.last_name = 'Mahan'
+AND rental.return_date > '2005-07-28'  
+AND rental.return_date < '2005-08-01'
+AND film.rental_rate > 4.00
+
+SELECT film.title, film.description,
+FROM film
+JOIN inventory on film.film_id = inventory.film_id
+JOIN rental on rental.inventory_id = inventory.inventory_id
+JOIN customer on customer.customer_id = rental.customer_id
+WHERE film.title ilike '%boat%' or film.description ilike '%boat%'
+AND customer.first_name = 'Matthew' 
+and customer.last_name = 'Mahan'
+order BY film.replacement_cost desc
