@@ -4,9 +4,9 @@ import json
 
 DBNAME = "Countries"
 USER = "postgres"
-PASSWORD = "root"  
+PASSWORD = "kl;'"  
 HOST = "localhost"
-PORT = "5432"
+PORT = "5433"
 
 
 connection = psycopg2.connect(dbname=DBNAME, user=USER, password=PASSWORD, host=HOST, port=PORT)

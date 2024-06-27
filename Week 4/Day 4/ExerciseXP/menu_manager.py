@@ -3,9 +3,9 @@ import psycopg2
 
 DBNAME = "W4D4"
 USER = "postgres"
-PASSWORD = "root"  
+PASSWORD = "kl;'"  
 HOST = "localhost"
-PORT = "5432"
+PORT = "5433"
 
 connection = psycopg2.connect(dbname=DBNAME, user=USER, password=PASSWORD, host=HOST, port=PORT)
 
@@ -32,3 +32,5 @@ def all_items():
     for value in results:
         list_of_items.append(value)
         return list_of_items
+    
+    all_items()

@@ -11,7 +11,7 @@ import psycopg2
 
 DBNAME = "W4D4"
 USER = "postgres"
-PASSWORD = "root"  
+PASSWORD = "kl;'"  
 HOST = "localhost"
 PORT = "5432"
 
