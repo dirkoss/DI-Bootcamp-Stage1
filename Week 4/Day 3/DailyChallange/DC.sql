@@ -37,7 +37,7 @@ INNER JOIN Customer ON Customer.id = Customer_Profile.id WHERE is_logged_in = tr
 
 SELECT Customer.first_name, Customer_Profile.is_logged_in
 FROM Customer_Profile
-FULL OUTER JOIN Customer ON  Customer.id = Customer_Profile.id
+OUTER JOIN Customer ON  Customer.id = Customer_Profile.id
 
 6. 
 

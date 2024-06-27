@@ -1,4 +1,3 @@
-
 import psycopg2
 
 DBNAME = "W4D4"
@@ -22,7 +21,6 @@ class MenuManager():
         elif name in results[0]:
             return name
             
-
     
 def all_items():
     list_of_items = []

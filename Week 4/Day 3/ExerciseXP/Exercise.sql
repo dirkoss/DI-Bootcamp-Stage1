@@ -104,4 +104,4 @@ JOIN customer ON customer.customer_id = rental.customer_id
 WHERE film.title ilike '%boat%' or film.description ilike '%boat%'
 AND customer.first_name = 'Matthew' 
 and customer.last_name = 'Mahan'
-order BY film.replacement_cost desc
+ORDER BY film.replacement_cost desc
