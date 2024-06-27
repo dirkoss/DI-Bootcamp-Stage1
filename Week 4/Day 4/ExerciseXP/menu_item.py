@@ -6,7 +6,6 @@
 #     self.name = name
 #     self.price = price
     
-
 import psycopg2
 
 DBNAME = "W4D4"
@@ -29,13 +28,19 @@ def save(self):
         values = (self.item_name, self.item_price)
         cursor.execute(query, values)
         connection.commit()
+    finally:
+            connection.close()
 
 def delete(self):
     query = f"DELETE FROM menu_items WHERE item_name = '{self.item_name}';"
     cursor.execute(query)
     connection.commit()
+    finally:
+            connection.close()
     
 def update(self, item_name):
     query = f"UPDATE menu_items SET item_name = '{self.item_name}', item_price = '{self.item_price}' where item_name = '{item_name}';"
     cursor.execute(query)
     connection.commit()
+    finally:
+            connection.close()
