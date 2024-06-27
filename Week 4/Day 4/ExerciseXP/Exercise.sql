@@ -10,3 +10,8 @@ CREATE TABLE menu_items(
 
 -- 2. 
 
+See menu_item.py 
+
+-- 3.
+
+
