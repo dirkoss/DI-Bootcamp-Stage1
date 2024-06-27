@@ -7,9 +7,7 @@
 #     self.price = price
     
 
-
 import psycopg2
-
 
 DBNAME = "W4D4"
 USER = "postgres"
@@ -17,10 +15,7 @@ PASSWORD = "root"
 HOST = "localhost"
 PORT = "5432"
 
-
-connection = psycopg2.connect(
-    dbname=DBNAME, user=USER, password=PASSWORD, host=HOST, port=PORT
-)
+connection = psycopg2.connect(dbname=DBNAME, user=USER, password=PASSWORD, host=HOST, port=PORT)
 
 cursor = connection.cursor()
 
