@@ -16,4 +16,4 @@ connection = psycopg2.connect(dbname=DBNAME, user=USER, password=PASSWORD, host=
 
 cursor = connection.cursor()
 
-WIP, not time today left, I hope to finish this later.
+# WIP, no time today left unfortunately, I hope to finish this later.
