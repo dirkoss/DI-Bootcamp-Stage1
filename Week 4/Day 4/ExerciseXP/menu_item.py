@@ -7,7 +7,6 @@
 #     self.price = price
     
 
-# print(MenuItem.name)
 
 import psycopg2
 
@@ -23,9 +22,7 @@ connection = psycopg2.connect(
     dbname=DBNAME, user=USER, password=PASSWORD, host=HOST, port=PORT
 )
 
-
 cursor = connection.cursor()
-
 
 class MenuItem:
     def __init___(self, item_name, item_price):
@@ -33,13 +30,13 @@ class MenuItem:
         self.item_price = item_price
         
 def save(self):
-        query = f''INSERT INTO menu_items (item_name, item_price) VALUES (%s, %s); ''
+        query = f"NSERT INTO menu_items (item_name, item_price) VALUES (%s, %s);"
         values = (self.item_name, self.item_price)
         cursor.execute(query, values)
         connection.commit()
 
 def delete(self):
-    query = f''DELETE FROM menu_items WHERE item_name = '{self.item_name}'; ''
+    query = f"DELETE FROM menu_items WHERE item_name = '{self.item_name}';"
     cursor.execute(query)
     connection.commit()
     
