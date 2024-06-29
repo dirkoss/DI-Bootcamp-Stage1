@@ -16,3 +16,4 @@ print(Employee1.full_name())
 print(Employee1.age)
 
 
+# Output:
