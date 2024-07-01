@@ -11,7 +11,8 @@ Boolean = true, false
 // Operators
 Arithmetic Operators = +, -, *, /, %, ++, --
 Assignment Operators = =, +=, -=, *=, /=, %=
-Comparison Operators = ==, ===, !=, !==, >, <, >=, <=
+Comparison Operators = ==, ===, !=, !==, >, <, >=, <=, !=, !==
+// == (tries to convert it to same type, and returns true if able to convert)
 Logical Operators = &&, ||, !
 
 // Nameing
@@ -37,3 +38,18 @@ if (condition) {
 console.log("Hello World");
 console.error("This is an error");
 console.warn("This is a warning");
+
+let str = "Hello";
+let str2 = `World`;
+
+console.log(str.length);
+// string.method
+
+
+let x = '10';
+let y = 20;
+
+console.log(number(x) + y);
+console.log(parseInt(x) + y);
+console.log(parseFloat(x) + y);
+
