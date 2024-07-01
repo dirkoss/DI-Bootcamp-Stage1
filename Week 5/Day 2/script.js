@@ -106,4 +106,31 @@ delete person.age; // delete a key value pair
 
 console.log(person.firstName);
 
+// Conditional Statements
+if (condition) {
+  // code
+}
+
+else if (condition) {
+    // code
+    }
+
+else {
+    // code
+    }
+
+switch (key) {
+    case value:
+        // code
+        break;
+    case value:
+        // code
+        break;
+    default: // else, if no case is true
+        // code
+        break;
+}
+
+
+
 // Loops
