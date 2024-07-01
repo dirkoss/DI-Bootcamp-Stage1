@@ -9,21 +9,20 @@ const people = ["Greg", "Mary", "Devon", "James"];
 people.shift();
 
 // 2.
-let james = people.indexOf("James");
-people[james] = "Jason"
+people[4] = "Jason"
 
-
+ 
 // 3.
-people.push("Adam Yonah");
+people[people.length] = "Dirk"
 
 // 4.
 console.log(people.indexOf("Mary"))
 
 // 5.
-copyOfPeople = people.slice(1, 3)
+let copy = people.slice(1, 4)
 
 // 6.
-console.log(people.indexOf("foo"))
+console.log(people.indexOf("foo")) //foo not present in array so it returns -1
 
 // 7.
 let last = people[people.length - 1]
@@ -46,39 +45,28 @@ for(let person of people) {
 
 
 
-
-
-
 // Exercise 2 
 
 // 1.
-const colors = ["Silver", "Yellow", "Grey", "Green"]
+const colors = ["Blue", "Red", "White", "Green", "Orange"]
 
 // 2.
 for(let i = 0; i < colors.length; i++) {
 console.log(`My #${i + 1} choice is ${colors[i]}`)
 }
 
-// 3.
-const place = ["1st", "2nd", "3rd", "4th"]
-for(let i = 0; i < colors.length; i++) {
-    console.log(`My ${place[i]} choice is ${colors[i]}`)
-    }
-
 
 
 // Exercise 3
 
 // 1.
-let userNumber = 0
+let Number = 0
 do {
-    let numberChoice = prompt("Please enter a number", 0);
-    userNumber = Number(numberChoice);
+    let Number1 = prompt("Enter an number", 0);
+    Number = Number(Number 1);
   }
-  while (userNumber < 10);
-//     While the number is smaller than 10 continue asking the user for a new number.
+  while (Number < 10);
 
-//     Tip : Which while loop is more relevant for this situation?
 
 
 // Exercise 4 
