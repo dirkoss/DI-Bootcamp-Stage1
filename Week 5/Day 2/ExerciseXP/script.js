@@ -92,7 +92,6 @@ const building = {
 // 2.
 console.log(building.numberOfFloors);
 
-
 // 3.
 console.log(building.numberOfAptByFloor.firstFloor, building.numberOfAptByFloor.thirdFloor);
 
@@ -100,7 +99,7 @@ console.log(building.numberOfAptByFloor.firstFloor, building.numberOfAptByFloor.
 console.log(building.nameOfTenants[1], building.numberOfRoomsAndRent.dan[0]);
 
 // 4.
-console.log(building.numberOfRoomsAndRent.david[1] + building.numberOfRoomsAndRent.sarah[1] > building.numberOfRoomsAndRent.dan[1]);
+console.log(building.numberOfRoomsAndRent.David[1] + building.numberOfRoomsAndRent.Sarah[1] > building.numberOfRoomsAndRent.dan[1]);
 
 
 
