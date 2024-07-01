@@ -53,3 +53,52 @@ console.log(number(x) + y);
 console.log(parseInt(x) + y);
 console.log(parseFloat(x) + y);
 
+let arr = [1, 2, hello, 4, 5];
+
+console.log(arr.length);
+console.log(arr[2]);
+
+arr[2] = 3;
+// change a element of an array
+
+// Array Methods
+
+console.log(arr.toString());
+console.log(arr.length);
+
+arr[arr.length] = 6; // add element to the end of the array
+arr[4] = 7; // add element to the end of the number
+arr.pop(); // remove the last element of the array
+arr.push(8); // add element to the end of the array
+arr.shift(); // REMOVE the first element of the array
+arr.unshift('lemon'); // ADD element to the start of the array
+
+// The JavaScript concat() method is used to merge two or more arrays into a single array.
+
+let arr2 = arr.slice(1, 3); // slice the array from index 1 to 3, doesnt change original array
+let arr3 = arr.splice(1, 2); // splice the array from index 1 to 2, changes original array
+let arr4 = arr.concat(arr2); // merge two arrays
+
+// Objects
+let obj = {key: value};
+let onj1 = new Object();
+
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue"
+    adress = {
+        street: "123 Main St",
+        city: "New York",
+        state: "NY"
+    },
+    };
+
+person.adress.state = "LA"; // change the state of the adress
+person["adress"]["state"] = "LA"; // change the state of the adress
+person["UserName"] = "JohnDoe"; // add a new key value pair
+person.username = "JohnDoe"; // add a new key value pair, similar to the above
+
+
+console.log(person.firstName);
