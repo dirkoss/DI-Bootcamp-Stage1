@@ -70,8 +70,8 @@ arr[arr.length] = 6; // add element to the end of the array
 arr[4] = 7; // add element to the end of the number
 arr.pop(); // remove the last element of the array
 arr.push(8); // add element to the end of the array
-arr.shift(); // REMOVE the first element of the array
-arr.unshift('lemon'); // ADD element to the start of the array
+arr.shift(); // REMOVE the first element of the array, opposite of pop
+arr.unshift('lemon'); // ADD element to the start of the array, opposite of push
 
 // The JavaScript concat() method is used to merge two or more arrays into a single array.
 
@@ -101,4 +101,9 @@ person["UserName"] = "JohnDoe"; // add a new key value pair
 person.username = "JohnDoe"; // add a new key value pair, similar to the above
 
 
+// Delete a key value pair
+delete person.age; // delete a key value pair
+
 console.log(person.firstName);
+
+// Loops
