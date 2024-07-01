@@ -13,7 +13,7 @@ Arithmetic Operators = +, -, *, /, %, ++, --
 Assignment Operators = =, +=, -=, *=, /=, %=
 Comparison Operators = ==, ===, !=, !==, >, <, >=, <=, !=, !==
 // == (tries to convert it to same type, and returns true if able to convert)
-Logical Operators = &&, ||, !
+Logical Operators = &&, ||, ! (and, or, not)
 
 // Nameing
 // Dont start with numbers or special characters
@@ -131,6 +131,11 @@ switch (key) {
         break;
 }
 
-
-
 // Loops
+for (let i = 0; i < 10; i++) {
+    // code
+}       
+let users = ["John", "Jane", "Jack"];
+for (let i = 0; i < users.length; i++) {
+    console.log(users[i]); // John, Jane, Jack
+}
