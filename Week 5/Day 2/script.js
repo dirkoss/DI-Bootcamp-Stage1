@@ -136,6 +136,19 @@ for (let i = 0; i < 10; i++) {
     // code
 }       
 let users = ["John", "Jane", "Jack"];
-for (let i = 0; i < users.length; i++) {
+for (let i = 0; i < users.length; i++) { // start at 0, go to the end of the array, increment by 1 each time
     console.log(users[i]); // John, Jane, Jack
+}
+
+//for in loop, you start at 0 and go to the end of the array
+
+for (let i in users) {
+    console.log(users[i]); // John, Jane, Jack
+}   
+
+// While Loop
+let i = 0; // initialization, start
+while (i < 10) { // condition, end
+    console.log(i); // code
+    i++; // increment, update
 }
