@@ -107,10 +107,10 @@ console.log(building.numberOfRoomsAndRent.David[1] + building.numberOfRoomsAndRe
 
 // 1.
 const family = {
-    father: "Mike",
-    mother : "Dian",
-    brother: "Jake",
-    sister: "Rose"
+    father: "Jan",
+    mother : "Mniek",
+    brother: "Klaas",
+    sister: "Sophie"
 }
 
 // 2.
@@ -127,32 +127,30 @@ for(let value in family) {
 
 // Exercise 6 : 
 
-
 const details = {
   my: 'name',
   is: 'Rudolf',
   the: 'reindeer'
 }
-newSentance = []
+Santa = []
 
 // 5.
 for(let value in details) {
-    newSentance.push(`${value} ${details[value]}`);
+    Santa.push(`${value} ${details[value]}`);
 }
-console.log(newSentance.join(" "))
+console.log(Santa.join(" "))
 
 
 
 // Exercise 7 
-// 1.
 const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"];
 
-// 2. 
+// 1.
 const firstLetter = [];
 for (let i = 0; i < names.length; i++) {
     firstLetter.push(names[i][0])
 }
 
-// 3.
+// 2.
 firstLetter.sort();
 console.log(firstLetter.join(''));
