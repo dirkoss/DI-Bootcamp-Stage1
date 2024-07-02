@@ -1,6 +1,6 @@
 // 1.
 
-for (let i = 0; i <7 1; i++) {
+for (let i = 0; i <7; i++) {
     if (i == 1) {
         console.log("*");
     } else if (i == 2){
