@@ -1,27 +1,33 @@
-console.log("Hello, World!");
-console.log("Hello, World!");
+// console.log("Hello, World!");
+// console.log("Hello, World!");
 
 
-function hello() {
-    console.log("Hello, World!");
-    console.log("Dirk!");
-}
+// function hello() {
+//     console.log("Hello, World!");
+//     console.log("Dirk!");
+// }
 
-hello();
+// hello();
 
-function sum(a, b) {
-    console.log(a + b); // only one return statement
-}
+// function sum(a, b) {
+//     console.log(a + b); // only one return statement
+// }
 
-sum("a", 2); //string will 
+// sum("a", 2); //string will 
 
 
-function example(x, y) {
-    if (x > y) return x;
-    return y; // else is not needed
+// function example(x, y) {
+//     if (x > y) return x;
+//     return y; // else is not needed
+// }   
+
+// example(2, 3);
+// console.log(example(4, 3));
+
+
+
+function greet(name, greeting) {
+    return "Hello, " + name + "! " + greeting;
 }   
 
-example(2, 3);
-console.log(example(4, 3));
-
-
+console.log(greet("Dirk", "How are you?")); // Hello, Dirk! How are you?
