@@ -26,8 +26,27 @@
 
 
 
-function greet(name, greeting) {
-    return "Hello, " + name + "! " + greeting;
-}   
+// function greet(name, greeting = "Welcome!!") { // default value = "Welcome"
+//     return `Hello ${name}!, ${greeting}`;
+// }   
 
-console.log(greet("Dirk", "How are you?")); // Hello, Dirk! How are you?
+// console.log(greet("Dirk", "How are you?")); // Hello, Dirk! How are you?
+// console.log(greet("Dirk")); // Hello, Dirk! Welcome!!
+
+
+// function greet(name, greeting) { // default value = "Welcome"
+//     if (greeting === undefined) {
+//         greeting = "Hi!!";
+//     }
+//     return `Hello ${name}!, ${greeting}`;
+// }   
+
+// console.log(greet("Dirk", "How are you?")); // Hello, Dirk! How are you?
+// console.log(greet("Dirk")); // Hello, Dirk! Hi!!
+
+
+function getFullName(firstName, lastName) {
+    return `${firstName} ${lastName}`;
+}
+
+console.log(getFullName("Dirk", "Ultee")); // Dirk Hoekstra
