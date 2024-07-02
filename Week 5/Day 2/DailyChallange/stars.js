@@ -1,6 +1,6 @@
 // 1.
 
-for (let i = 0; i <7; i++) {
+for (let i = 0; i <= 6; i++) {
     if (i == 1) {
         console.log("*");
     } else if (i == 2){
@@ -25,5 +25,4 @@ for (let i = 1; i<7; i++) {
         console.log(star.repeat(i));
     }
 }
-
 
