@@ -41,12 +41,27 @@
 //     return `Hello ${name}!, ${greeting}`;
 // }   
 
-// console.log(greet("Dirk", "How are you?")); // Hello, Dirk! How are you?
-// console.log(greet("Dirk")); // Hello, Dirk! Hi!!
+// // console.log(greet("Dirk", "How are you?")); // Hello, Dirk! How are you?
+// // console.log(greet("Dirk")); // Hello, Dirk! Hi!!
 
 
-function getFullName(firstName, lastName) {
-    return `${firstName} ${lastName}`;
+// function getFullName(firstName, lastName) {
+//     return `${firstName} ${lastName}`;
+// }
+
+// console.log(getFullName("Dirk", "Ultee")); // Dirk Hoekstra
+
+function test() {
+    console.log("before");
+     // exception
+    a
+    console.log("after");
 }
 
-console.log(getFullName("Dirk", "Ultee")); // Dirk Hoekstra
+test();
+
+try {
+    console.log("before");
+    a
+    console.log("after");
+}   
