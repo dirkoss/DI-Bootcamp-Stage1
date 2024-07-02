@@ -8,3 +8,20 @@ function hello() {
 }
 
 hello();
+
+function sum(a, b) {
+    console.log(a + b); // only one return statement
+}
+
+sum("a", 2); //string will 
+
+
+function example(x, y) {
+    if (x > y) return x;
+    return y; // else is not needed
+}   
+
+example(2, 3);
+console.log(example(4, 3));
+
+
