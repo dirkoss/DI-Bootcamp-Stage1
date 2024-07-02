@@ -51,17 +51,39 @@
 
 // console.log(getFullName("Dirk", "Ultee")); // Dirk Hoekstra
 
-function test() {
-    console.log("before");
-     // exception
-    a
-    console.log("after");
+// function test() {
+//     console.log("before");
+//      // exception
+//     a
+//     console.log("after");
+// }
+
+// test();
+
+// try {
+//     console.log("before");
+//     a
+//     console.log("after");
+// }   
+
+// catch (error) {
+//     console.log("error");
+
+// }
+
+// throw new Error("This is an error");
+
+// Object methods - this keyword similar to self in Python
+
+let obj = {
+    a : 1,
+    b : 2,
+    sum : function() {
+        console.log(this.a + this.b);
+    }
 }
+obj.sum();
 
-test();
 
-try {
-    console.log("before");
-    a
-    console.log("after");
-}   
+
+
