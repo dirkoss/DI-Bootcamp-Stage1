@@ -18,11 +18,13 @@ for (let i = 0; i <= 6; i++) {
 
 
 // 2.
-let star = "*"
 
-for (let i = 1; i<7; i++) {
-    for (let x = 0; x<=i; x++) {
-        console.log(star.repeat(i));
-    }
+for (let i = 1; i < 7; i++) {
+    let star = "";
+    for (let x = 0; x<i; x++) {
+        star += "*";
+    }        
+    console.log(star);
+
 }
 
