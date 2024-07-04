@@ -9,7 +9,7 @@ function displayNumbersDivisible() {
         if (i % 23 == 0){
             console.log(i);
             numbers.push(i)
-        }
+        // Remove the extra closing curly brace
     }
     for (let i = 0; i < numbers.length; i++) {
         sumOfNumbers += numbers[i]
@@ -39,29 +39,29 @@ const prices = {
 
 let shoppingList = ["banana", "orange", "apple"]
 
-myBill = (arr) {
-    totalPrice = 0
+function myBill(arr) {
+    let totalPrice = 0;
     for (let i = 0; i < arr.length; i++) {
-         if (arr[i] in stock && stock[arr[i]] > 0) {
-            console.log(`${arr[i]} costs ${prices[arr[i]]}`)
-            totalPrice += prices[arr[i]]
-         } 
-        
+        if (arr[i] in stock && stock[arr[i]] > 0) {
+            console.log(`${arr[i]} costs ${prices[arr[i]]}`);
+            totalPrice += prices[arr[i]];
+        }
     }
-    console.log(totalPrice)
-  } 
-  myBill(shoppingList)
+    console.log(totalPrice);
+}
+
+myBill(shoppingList);
 
 //   Exercise 3
 
 function changeEnough(itemPrice, amountOfChange) {
     sumOfChange = 0
-    for (let index = 0; index < amountOfChange.length; index++) {
+    for (let index = 0; index <= amountOfChange.length; index++) {
         if (index == 0) {
             sumOfChange += amountOfChange[index] * 0.25
-        } else if (index == 1) {
+        } if (index == 1) {
             sumOfChange += amountOfChange[index] * 0.10
-        } else if (index == 2) {
+        } if (index == 2) {
             sumOfChange += amountOfChange[index] * 0.05
         } else {
             sumOfChange += amountOfChange[index] * 0.01
@@ -86,7 +86,7 @@ function hotelCost() {
 function planeRideCost() {
     do {
         destination = prompt("please give us the destination you wish to go to");
-     while (typeof destination !== "string" || destination.length <= 1);
+     } while (typeof destination !== "string" || destination.length <= 1);
     if (destination == "London") {
         return 183
      } else if (destination == "Paris") {
