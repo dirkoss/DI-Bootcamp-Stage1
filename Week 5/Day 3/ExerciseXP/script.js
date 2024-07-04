@@ -9,7 +9,6 @@ function displayNumbersDivisible() {
         if (i % 23 == 0){
             console.log(i);
             numbers.push(i)
-        // Remove the extra closing curly brace
     }
     for (let i = 0; i < numbers.length; i++) {
         sumOfNumbers += numbers[i]
@@ -56,15 +55,15 @@ myBill(shoppingList);
 
 function changeEnough(itemPrice, amountOfChange) {
     sumOfChange = 0
-    for (let index = 0; index <= amountOfChange.length; index++) {
-        if (index == 0) {
-            sumOfChange += amountOfChange[index] * 0.25
-        } if (index == 1) {
-            sumOfChange += amountOfChange[index] * 0.10
-        } if (index == 2) {
-            sumOfChange += amountOfChange[index] * 0.05
+    for (let i = 0; i <= amountOfChange.length; i++) {
+        if (i == 0) {
+            sumOfChange += amountOfChange[i] * 0.25
+        } if (i == 1) {
+            sumOfChange += amountOfChange[i] * 0.10
+        } if (i == 2) {
+            sumOfChange += amountOfChange[i] * 0.05
         } else {
-            sumOfChange += amountOfChange[index] * 0.01
+            sumOfChange += amountOfChange[i] * 0.01
         }
         
     }
@@ -109,12 +108,12 @@ function rentalCarCost() {
 }
 
 function totalVacationCost() {
-    let hotel = hotelCost()
-    let plane = planeRideCost()
-    let car = rentalCarCost()
+    let Hotel = hotelCost()
+    let Plane = planeRideCost()
+    let Car = rentalCarCost()
 
-    total = hotel + plane + car
-    console.log(`the total cost is ${total}$`)
+    total = Hotel + Plane + Car
+    console.log(`Total is ${total}$`)
 }
 
 

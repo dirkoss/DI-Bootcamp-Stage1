@@ -13,7 +13,8 @@ console.log(navBar.firstElementChild.lastElementChild);
 
 // Exercise 7.
 
-const allBooks = [{title: "Elon Musk",
+const allBooks = [
+    {title: "Elon Musk",
     author: "Walter Isaacson",
     image : "https://m.media-amazon.com/images/I/81Kaj5++6pL._SL1500_.jpg",
     alreadyRead : FALSE
@@ -24,6 +25,6 @@ const allBooks = [{title: "Elon Musk",
     author: "Bill Browder",
     image: "https://m.media-amazon.com/images/I/81keU1kIh1L._SL1500_.jpg",
     alreadyRead : TRUE
-    }]
+    }
+]
 
-    
