@@ -143,11 +143,25 @@ let email = "jj@gmail.com";
 
 let obj = {
     username,
-    emaiil,
+    email,
     age: 25
 }
 
 console.log(obj); // {username: "John", email: "jj@gmail.com", age: 25}
+
+// loop through an object
+
+// let obj1 = {
+//     a: 1,
+//     b: 2,
+//     c: 3
+// }
+
+for (let x in obj) {
+    console.log(x, obj[x]);
+}
+
+
 
 
 
