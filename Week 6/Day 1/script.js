@@ -133,3 +133,22 @@ console.log(arr); // [5, 2, 3]  because the array is a reference type and the va
 console.log(arr1); // [5, 2, 3] 
 console.log(arr2); // [5, 2, 3]
 
+
+// dynamic key in object, you can use square brackets to create a dynamic key in an object 
+
+// shorthand property for key and value in object
+
+let username = "John";
+let email = "jj@gmail.com";
+
+let obj = {
+    username,
+    emaiil,
+    age: 25
+}
+
+console.log(obj); // {username: "John", email: "jj@gmail.com", age: 25}
+
+
+
+
