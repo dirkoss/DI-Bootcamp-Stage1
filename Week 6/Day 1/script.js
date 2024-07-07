@@ -34,10 +34,17 @@
 // // first the condition than the question mark and the first value is the true value and the second value is the false value
 
 
-function checkYear(year) {
-   return year > 2000 
-    ? "You are in the 21st century"
-    : "You live in the Middle Ages"
-}
+// function checkYear(year) {
+//    return year > 2000 
+//     ? "You are in the 21st century"
+//     : "You live in the Middle Ages"
+// }
 
-console.log(checkYear(2002)); // You are in the 21st century
+// console.log(checkYear(2002)); // You are in the 21st century
+
+let name = "John";
+let last = "Doe";
+
+let greeting = `Hello ${name} ${last}`;
+
+console.log(greeting); // Hello John Doe
