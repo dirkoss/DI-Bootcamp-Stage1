@@ -87,29 +87,46 @@
 
 // currying
 
-function multi(a, b) {
-    return a * b;
-}
+// function multi(a, b) {
+//     return a * b;
+// }
 
-function sum(a, b) {
-    return a + b;
-}
+// function sum(a, b) {
+//     return a + b;
+// }
 
-function currying(f) {
-    return function(a) {
-        return function(b) {
-            return f(a, b);
-        }
-    }
-}
+// function currying(f) {
+//     return function(a) {
+//         return function(b) {
+//             return f(a, b);
+//         }
+//     }
+// }
 
-let curryingMulti = currying(multi);
-let curryingSum = currying(sum);
+// let curryingMulti = currying(multi);
+// let curryingSum = currying(sum);
 
-console.log(curryingMulti(2)(4)); // 8
-console.log(curryingSum(2)(4)); // 6
+// console.log(curryingMulti(2)(4)); // 8
+// console.log(curryingSum(2)(4)); // 6
 
-console.log(currying(sum(2)(4)));
+// console.log(currying(sum(2)(4)));
 
 
+
+
+// By value and by reference
+
+let a = 10;
+let b = a;
+b = 5;
+
+console.log(a); // 10
+console.log(b); // 5
+
+
+let arr = [1, 2, 3];
+let arr1 = arr;
+arr1[0] = 5;
+console.log(arr); // [5, 2, 3]  because the array is a reference type and the value of arr1 is the reference of arr, same in the memory. Same in objects
+console.log(arr1); // [5, 2, 3] 
 
