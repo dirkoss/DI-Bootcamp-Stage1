@@ -126,7 +126,10 @@ console.log(b); // 5
 
 let arr = [1, 2, 3];
 let arr1 = arr;
-arr1[0] = 5;
+let arr2 = [...arr]; // spread operator
+arr1[1] = 5;
+arr2[0] = 5;
 console.log(arr); // [5, 2, 3]  because the array is a reference type and the value of arr1 is the reference of arr, same in the memory. Same in objects
 console.log(arr1); // [5, 2, 3] 
+console.log(arr2); // [5, 2, 3]
 
