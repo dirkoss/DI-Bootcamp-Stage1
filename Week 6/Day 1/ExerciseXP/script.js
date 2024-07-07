@@ -53,12 +53,13 @@
 
 // isString = (str) => typeof str == "string" ? console.log("True") : console.log("False");
 
+
 // 🌟 Exercise 4 : Find The Sum
 
 // let sum = (a, b) => typeof a == "number" && typeof b == "number" ? console.log(a + b) : console.log("Sorry but you can only add numbers");
 
-// 🌟  Exercise 5 : Kg And Grams
 
+// 🌟  Exercise 5 : Kg And Grams
 
 // multiple optionalities, maybe in wrong order:
 
@@ -71,6 +72,7 @@
 // function calcWeight3(kg) {
 //     return kg * 1000;
 // }
+
 
 // 🌟 Exercise 6 : Fortune Teller
 
