@@ -34,7 +34,6 @@ colors.forEach(element => {
 // 🌟 Exercise 3 : Analyzing
 
 
-------1------
 const fruits = ["apple", "orange"];
 const vegetables = ["carrot", "potato"];
 
@@ -43,13 +42,11 @@ console.log(result);
 
 // result will be ['bread', 'carrot', 'potato', 'chicken', 'apple', 'orange']
 
-------2------
 const country = "USA";
 console.log([...country]);
 
 // output will be ['U', 'S', 'A']
 
-------Bonus------
 let newArray = [...[,,]];
 console.log(newArray);
 
