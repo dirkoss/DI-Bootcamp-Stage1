@@ -26,7 +26,7 @@ const inventory = [
 
 
 function sortCarInventory(inventory) {
-    let sortedCars = inventory.sort((a, b) => a.car_year - b.car_year);
+    let sortedCars = nventory.sort((a, b) => a.car_year - b.car_year);
     return console.log(sortedCars);
 }
 
