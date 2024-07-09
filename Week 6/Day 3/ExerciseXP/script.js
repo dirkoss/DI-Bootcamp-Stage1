@@ -64,9 +64,7 @@ console.log(typeof member);
 // 🌟 Exercise 5 
 
 
-//     Analyze the options below. Which constructor will successfully extend the Dog class?
-
-    I believe option 2 will extend the Dog class
+//I believe option 2 will extend the Dog class
 
 
 // 🌟 Exercise 6 
