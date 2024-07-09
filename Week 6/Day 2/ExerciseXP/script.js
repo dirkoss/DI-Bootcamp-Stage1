@@ -20,12 +20,12 @@ if (colors.includes("Violet")) {
 
 // 2
 
-const colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+const colors1 = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
 const ordinal = ["th","st","nd","rd"];
 let index = 1
 
-colors.forEach(element => {
-    index <= 3 ? console.log(`${index}${ordinal[index]} choice is ${colors[index - 1]}`) 
+colors1.forEach(element => {
+    index <= 3 ? console.log(`${index}${ordinal[index]} choice is ${colors1[index - 1]}`) 
     : console.log(`${index}${ordinal[0]} choice is ${colors[index - 1]}`)
     ++index 
 });
