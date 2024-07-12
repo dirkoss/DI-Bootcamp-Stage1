@@ -16,13 +16,24 @@
 //     document.querySelector("body").appendChild(element);
 // }
 
-let bobsFollowers = ['bob','hans','kees','peter']
-let tinasFollowers = ['kees', 'piet','peter']
+// let bobsFollowers = ['bob','hans','kees','peter']
+// let tinasFollowers = ['kees', 'piet','peter']
 
-let mutualFollowers = []
+// let mutualFollowers = []
 
-for (let i = 0; i < bobsFollowers.length; i++){
-  for (let j = 0; j < tinasFollowers.length; j++){
-   if (tinasFollowers[j] === bobsFollowers[i]){mutualFollowers.push(tinasFollowers[j])}}}
+// for (let i = 0; i < bobsFollowers.length; i++){
+//   for (let j = 0; j < tinasFollowers.length; j++){
+//    if (tinasFollowers[j] === bobsFollowers[i]){mutualFollowers.push(tinasFollowers[j])}}}
 
-console.log(mutualFollowers)
+// console.log(mutualFollowers)
+
+for (let i = 0; i < 99; i++) {
+    if (i > 2 ) {
+       break;
+    }
+    console.log('Banana.');
+  }
+  
+  console.log('Orange you glad I broke out the loop!');
+  
+  
