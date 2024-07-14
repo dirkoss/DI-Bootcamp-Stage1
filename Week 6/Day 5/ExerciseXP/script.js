@@ -10,11 +10,11 @@ const flipcoin = new Promise((resolve, reject) => {
     setTimeout(() => {
         const flipresult = flip();
         if (flipresult === 'heads') {
-            resolve('You win'+ flipcoin);
+            resolve('You win' + flipresult);
         } else {
-            reject('You lose' + flipcoin);
+            reject('You lose');
         }
-    }, 2000);
+    }, 1000);
 
 });
 
@@ -23,3 +23,4 @@ flipcoin.then((result) => {
 }
 ).catch((error) => { console.log(error) }
 );
+
