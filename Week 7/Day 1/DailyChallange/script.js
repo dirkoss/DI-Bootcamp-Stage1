@@ -158,4 +158,4 @@ toJs()
 // If the user enters the word "Hello", the output will be:
 // .... . .-.. .-.. ---, like this
 
-toJs(
+toJs()
