@@ -17,6 +17,9 @@ function compareToTen(num) {
     })
 }
 
+compareToTen(15)
+    .catch(error => console.log(error));
+
 
 // 🌟 Exercise 2 : Promises
 
