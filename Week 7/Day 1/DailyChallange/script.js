@@ -158,4 +158,12 @@ toJs()
 // If the user enters the word "Hello", the output will be:
 // .... . .-.. .-.. ---, like this
 
-toJs()
+function toJs( ) {
+    return new Promise((resolve, reject) => {
+        if (Object.keys(morseJS).length === 0) {
+            reject('Error: The morse javascript object is empty!');
+        } else {
+            resolve(morseJS);
+        }
+    });
+}
