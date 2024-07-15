@@ -1,11 +1,4 @@
-// 🌟 Exercise 1 : Comparison
-
-// Instructions
-
-// Create a function called compareToTen(num) that takes a number as an argument.
-// The function should return a Promise:
-// the promise resolves if the argument is less than or equal to 10
-// the promise rejects if argument is greater than 10.
+// 🌟 Exercise 1 
 
 function compareToTen(num) {
     return new Promise((resolve, reject) => {
@@ -21,25 +14,31 @@ compareToTen(15)
     .catch(error => console.log(error));
 
 
-// 🌟 Exercise 2 : Promises
+// 🌟 Exercise 2 : 
 
-// Instructions
-
-// Create a promise that resolves itself in 4 seconds and returns a “success” string.
-
-
-
-
-// 🌟 Exercise 3 : Resolve & Reject
-
-// Instructions
-
-// Use Promise.resolve(value) to create a promise that will resolve itself with a value of 3.
-// Use Promise.reject(error) to create a promise that will reject itself with the string “Boo!”
+const success = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve("“success”")
+    }, 4 * 1000);
+})
 
 
+success.then(function(value){console.log(value)})
 
 
+// 🌟 Exercise 3 
 
-// Exercise 4: Quizz - Not Mandatory
+let resolvePromise = new Promise((resolve, reject) => {
+    resolve(3)
+})
+
+resolvePromise.then(function(value){console.log(value)})
+
+
+let rejectPromise = new Promise((resolve, reject) => { reject("Boo!")
+})
+
+
+rejectPromise.catch(function(value){console.log(value)})
+
 
