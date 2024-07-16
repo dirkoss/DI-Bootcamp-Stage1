@@ -19,3 +19,14 @@ for i in range(start,end + 1):
         item = int(item)
     list_Dirk2.append(item)
 print(list_Dirk2)
+
+set age(newAge) {
+    if(typeof newAge === 'number' && newAge>=0){
+        this._age = newAge
+    }
+    else{
+        console.log('Invalid input')
+    }
+    
+    this._age
+}
