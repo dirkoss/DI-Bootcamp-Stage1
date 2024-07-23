@@ -15,7 +15,7 @@ async function one(userInput){
     try{
         const response = await fetch(url);
         if(!response.ok){
-            throw new Error('HTTP error')
+            throw new Error('Error: ' + response.status);
         }
         const data = await response.json()
         const imgUrl = await data.data.images.original.url;
