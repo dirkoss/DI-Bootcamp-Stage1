@@ -20,6 +20,7 @@ async function one(userInput){
         const data = await response.json()
         const imgUrl = await data.data.images.original.url;
         addImageToDom(imgUrl);
+        
     }
     catch(err){
         console.error(err)
