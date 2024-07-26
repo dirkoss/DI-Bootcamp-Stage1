@@ -22,6 +22,7 @@ async function one(userInput){
         addImageToDom(imgUrl);
 
         
+        
     }
     catch(err){
         console.error(err)
